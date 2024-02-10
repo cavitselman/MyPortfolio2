@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DenemeCore.DAL.Concrete
 {
-    public class Context : IdentityDbContext<WriterUser, WriterRole, int> 
+    public class Context : IdentityDbContext<WriterUser, WriterRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -30,7 +30,7 @@ namespace DenemeCore.DAL.Concrete
         public DbSet<User> Users { get; set; }
         public DbSet<UserMessage> UserMessages { get; set; }
         public DbSet<ToDoList> ToDoLists { get; set; }
-        public DbSet<Test1> Test1s { get; set; }
         public DbSet<Announcement> Announcements { get; set; }
+        public DbSet<Test1> Test1s { get; set; }
     }
 }

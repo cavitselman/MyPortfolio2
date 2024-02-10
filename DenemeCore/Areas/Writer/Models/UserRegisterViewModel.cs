@@ -10,10 +10,10 @@ namespace DenemeCore.Areas.Writer.Models
         [Required(ErrorMessage = "Lütfen Soyadınızı Girin")]
         public string Surname { get; set; }
 
-        [Required(ErrorMessage = "Lütfen Resim Url Girin")]
+        [Required(ErrorMessage = "Lütfen Resim URL Girin")]
         public string ImageUrl { get; set; }
 
-        [Required(ErrorMessage="Lütfen Kullanıcı Adını Girin")]
+        [Required(ErrorMessage ="Lütfen Kullanıcı Adını Girin")]
         public string UserName { get; set; }
 
         [Required(ErrorMessage = "Lütfen Şifreyi Girin")]
