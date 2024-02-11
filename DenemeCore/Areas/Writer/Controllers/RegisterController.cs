@@ -18,7 +18,7 @@ namespace DenemeCore.Areas.Writer.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            return View(new UserRegisterViewModel());
         }
 
         [HttpPost]
@@ -30,7 +30,7 @@ namespace DenemeCore.Areas.Writer.Controllers
                 Surname = p.Surname,
                 Email = p.Mail,
                 UserName = p.UserName,
-                ImageUrl = p.ImageUrl
+                ImageUrl = p.ImageUrl            
             };
 
             if (p.Password == p.ConfirmPassword)
@@ -49,7 +49,7 @@ namespace DenemeCore.Areas.Writer.Controllers
                     }
                 }
             }
-            return View();
+            return View(p);
         }
     }
 }

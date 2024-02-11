@@ -1,5 +1,6 @@
 ﻿using DenemeCore.BL.Concrete;
 using DenemeCore.DAL.EntityFramework;
+using DenemeCore.EL.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +15,13 @@ namespace DenemeCore.Areas.Writer.Controllers
         {
             var values = announcementManager.TGetList();
             return View(values);
+        }
+
+        [HttpGet]
+        public IActionResult AnnouncementDetails(int id)
+        {
+           Announcement announcement=announcementManager.TGetByID(id);
+            return View(announcement);
         }
     }
 }
