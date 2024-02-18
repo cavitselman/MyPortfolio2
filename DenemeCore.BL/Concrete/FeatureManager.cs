@@ -38,6 +38,11 @@ namespace DenemeCore.BL.Concrete
             return _featureDal.GetList();
         }
 
+        public List<Feature> TGetListbyFilter()
+        {
+            throw new NotImplementedException();
+        }
+
         public void TUpdate(Feature t)
         {
             _featureDal.Update(t);

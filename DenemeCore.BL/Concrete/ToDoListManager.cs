@@ -38,6 +38,11 @@ namespace DenemeCore.BL.Concrete
             return _toDoListDal.GetList();
         }
 
+        public List<ToDoList> TGetListbyFilter()
+        {
+            throw new NotImplementedException();
+        }
+
         public void TUpdate(ToDoList t)
         {
             throw new NotImplementedException();

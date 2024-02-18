@@ -39,6 +39,11 @@ namespace DenemeCore.BL.Concrete
             return _serviceDal.GetList();
         }
 
+        public List<Service> TGetListbyFilter()
+        {
+            throw new NotImplementedException();
+        }
+
         public void TUpdate(Service t)
         {
             _serviceDal.Update(t);

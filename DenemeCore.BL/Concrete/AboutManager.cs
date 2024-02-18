@@ -35,7 +35,12 @@ namespace DenemeCore.BL.Concrete
         public List<About> TGetList()
         {
             return _aboutDal.GetList();
-        }            
+        }
+
+        public List<About> TGetListbyFilter()
+        {
+            throw new NotImplementedException();
+        }
 
         public void TUpdate(About t)
         {
