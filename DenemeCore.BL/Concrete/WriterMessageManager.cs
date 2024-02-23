@@ -30,7 +30,7 @@ namespace DenemeCore.BL.Concrete
 
         public void TAdd(WriterMessage t)
         {
-            throw new NotImplementedException();
+            _writerMessageDal.Insert(t);
         }
 
         public void TDelete(WriterMessage t)
@@ -40,7 +40,7 @@ namespace DenemeCore.BL.Concrete
 
         public WriterMessage TGetByID(int id)
         {
-            throw new NotImplementedException();
+            return _writerMessageDal.GetByID(id);
         }
 
         public List<WriterMessage> TGetList()
