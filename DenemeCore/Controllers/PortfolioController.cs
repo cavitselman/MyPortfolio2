@@ -12,18 +12,12 @@ namespace DenemeCore.Controllers
         PortfolioManager portfolioManager = new PortfolioManager(new EfPortfolioDal());
         public IActionResult Index()
         {
-            ViewBag.v1 = "Proje Listesi";
-            ViewBag.v2 = "Projeler";
-            ViewBag.v3 = "Proje Listesi";
             var values = portfolioManager.TGetList();
             return View(values);
         }
         [HttpGet]
         public IActionResult AddPortfolio()
         {
-            ViewBag.v1 = "Proje Listesi";
-            ViewBag.v2 = "Projeler";
-            ViewBag.v3 = "Proje Ekleme";
             return View();
         }
         [HttpPost]
@@ -54,9 +48,6 @@ namespace DenemeCore.Controllers
         [HttpGet]
         public IActionResult EditPortfolio(int id)
         {
-            ViewBag.v1 = "Proje Listesi";
-            ViewBag.v2 = "Projelerim";
-            ViewBag.v3 = "Proje Düzenleme";
             var values = portfolioManager.TGetByID(id);
             return View(values);
         }

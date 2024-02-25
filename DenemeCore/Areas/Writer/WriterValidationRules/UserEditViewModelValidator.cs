@@ -7,8 +7,8 @@ namespace DenemeCore.Areas.Writer.WriterValidationRules
     {
         public UserEditViewModelValidator() 
         {
-            RuleFor(x => x.Password).NotEmpty().WithMessage("Şifre boş geçilemez");
-            RuleFor(x => x.PasswordConfirm).NotEmpty().WithMessage("Şifre boş geçilemez");
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Şifre boş geçilemez!");
+            RuleFor(x => x.PasswordConfirm).NotEmpty().WithMessage("Şifre boş geçilemez!");
         }
     }
 }
