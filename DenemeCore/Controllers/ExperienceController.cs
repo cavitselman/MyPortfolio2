@@ -3,10 +3,12 @@ using DenemeCore.BL.ValidationRules;
 using DenemeCore.DAL.EntityFramework;
 using DenemeCore.EL.Concrete;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DenemeCore.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class ExperienceController : Controller
     {
         ExperienceManager experienceManager = new ExperienceManager(new EfExperienceDal());
