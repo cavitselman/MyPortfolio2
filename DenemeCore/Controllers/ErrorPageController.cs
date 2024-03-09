@@ -2,7 +2,7 @@
 
 namespace DenemeCore.Controllers
 {
-    public class DashboardController : Controller
+    public class ErrorPageController : Controller
     {
         public IActionResult Index()
         {
