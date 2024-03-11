@@ -18,6 +18,7 @@ namespace DenemeCore.Controllers
             var values = JsonConvert.SerializeObject(userManager.TGetList());
             return Json(values);
         }
+
         [HttpPost]
         public IActionResult AddUser(WriterUser p)
         {

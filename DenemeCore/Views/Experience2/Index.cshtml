@@ -6,47 +6,42 @@
     Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
+<style>
+    button.ens {
+        margin-left: 15px;
+    }
+</style>
+
+<div class="col-md-12">
+    <h5>İşlem Paneli</h5>
+    <input type="text" class="form-control" id="inpid" placeholder="ID ile veri getirmek, silmek veya güncellemek için ID Giriniz..!" />
+</div>
+<br />
+<div class="col-md-12">
+    <h5>Yeni Deneyim Ekleme Paneli</h5>
+    <input type="text" class="form-control" id="inpname" placeholder="Başlık giriniz..." />
+    <br />
+    <input type="text" class="form-control" id="inpdate" placeholder="Tarih giriniz..." />
+    <br />
+    <input type="text" class="form-control" id="inpimage" placeholder="Görsel Url giriniz..." />
+    <br />
+    <input type="text" class="form-control" id="inpdescription" placeholder="Açıklama Giriniz..." />
+</div>
+<br />
 <div class="col-md-6">
     <div class="p-2">
         <button type="button" id="getlistall" class="btn btn-outline-primary">Verileri Getir</button>
-        <button type="button" id="btnadd" class="btn btn-outline-info">Kaydet</button>
-        <button type="button" id="btnid" class="btn btn-outline-warning">Id ile Getir</button>
-        <button type="button" id="btndelete" class="btn btn-outline-danger">Sil</button>
-        <button type="button" id="btnupdate" class="btn btn-outline-success">Güncelle</button>
+        <button type="button" id="btnid" class="btn btn-outline-warning ens">ID ile Getir</button>
+        <button type="button" id="btnupdate" class="btn btn-outline-success ens">Güncelle</button>
+        <button type="button" id="btnadd" class="btn btn-outline-info ens">Ekle</button>
+        <button type="button" id="btndelete" class="btn btn-outline-danger ens">Sil</button>
     </div>
 </div>
 
 <div class="p-2" id="listexperience">
 </div>
-
 <br />
-
 <div class="p-2" id="listbyidexperience">
-</div>
-
-<br />
-
-<div class="col-md-12">
-    <h5>Ekleme Paneli</h5>
-    <input type="text" class="form-control" id="inpid" placeholder="ID Giriniz" />
-    <br />
-    <input type="text" class="form-control" id="inpname" placeholder="Başlık" />
-    <br />
-    <input type="text" class="form-control" id="inpdate" placeholder="Tarih" />
-    <br />
-    <input type="text" class="form-control" id="inpimage" placeholder="Görsel Url Giriniz" />
-    <br />
-    <input type="text" class="form-control" id="inpdescription" placeholder="Açıklama Giriniz" />
-</div>
-<br />
-<div class="col-md-12">
-    <h5>Id'ye Göre Getirme Paneli</h5>
-    <input type="text" class="form-control" id="inpid" placeholder="ID Giriniz" />
-</div>
-<br />
-<div class="col-md-12">
-    <h5>Silme Paneli</h5>
-    <input type="text" class="form-control" id="inpexpid" placeholder="ID Giriniz" />
 </div>
 
 @section scripts
@@ -76,7 +71,9 @@
         $("#btnadd").click(function () {
             let values = {
                 Name: $("#inpname").val(),
-                Date: $("#inpdate").val()
+                Date: $("#inpdate").val(),
+                ImageUrl: $("#inpimage").val(),
+                Description: $("#inpdescription").val()
             };
 
             $.ajax({
@@ -110,10 +107,10 @@
         });
 
         $("#btndelete").click(x => {
-            let id = $("#inpexpid").val();
+            let id = $("#inpid").val();
             $.ajax({
                 url: "/Experience/DeleteExperience/" + id,
-                type: "post",
+                type: "Post",
                 contentType: "application/json",
                 dataType: "json",
                 success: function (funk3) {
@@ -134,7 +131,7 @@
                 type: "Post",
                 url: "/Experience2/EditExperience/",
                 data: values,
-                dataType:"json",
+                dataType: "json",
                 success: function (funk4) {
                     let result = jQuery.parseJSON(funk4);
                     alert(result.Name + "Başarılı bir şekilde Güncellendi");
