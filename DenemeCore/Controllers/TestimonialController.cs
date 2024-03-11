@@ -22,14 +22,14 @@ namespace DenemeCore.Controllers
         }
 
         [HttpGet]
-        public ActionResult EditTestimonial(int id)
+        public IActionResult EditTestimonial(int id)
         {
             var values=testimonialManager.TGetByID(id);
             return View(values);
         }
         
         [HttpPost]
-        public ActionResult EditTestimonial(Testimonial testimonial)
+        public IActionResult EditTestimonial(Testimonial testimonial)
         {
             testimonialManager.TUpdate(testimonial);
             return RedirectToAction("Index");
