@@ -17,7 +17,7 @@
                     <label for="exampleInputName1">Soyadınız</label>
                     <input type="text" asp-for="Surname" class="form-control" id="exampleInputName1" placeholder="Soyad">
                 </div>
-                <div class="form-group">
+                @* <div class="form-group">
                     <label for="exampleInputPassword4">Şifreniz</label>
                     <input type="password" asp-for="Password" class="form-control" id="exampleInputName1" placeholder="Şifreniz">
                     @Html.ValidationMessageFor(x => x.Password, null, new { @class = "text-danger" })
@@ -26,9 +26,9 @@
                     <label for="exampleInputPassword4">Şifre Tekrar</label>
                     <input type="password" asp-for="PasswordConfirm" class="form-control" id="exampleInputName1" placeholder="Şifre Tekrar">
                     @Html.ValidationMessageFor(x => x.PasswordConfirm, null, new { @class = "text-danger" })
-                </div>
+                </div> *@
                 <div class="form-group">
-                    <label>Resim Seç</label>
+                    <label>Profil Resmi Seç</label>
                     <input type="file" asp-for="Picture">
                     @* <div class="input-group col-xs-12">
                     <input type="text" class="form-control file-upload-info" disabled placeholder="Resim yükleyin">

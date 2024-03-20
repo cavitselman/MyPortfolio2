@@ -1,10 +1,12 @@
 ﻿using DenemeCore.BL.Concrete;
 using DenemeCore.DAL.EntityFramework;
 using DenemeCore.EL.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DenemeCore.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         public IActionResult Index()
