@@ -32,7 +32,7 @@ namespace DenemeCore.Areas.Writer.Controllers
                 var result = await _signInManager.PasswordSignInAsync(p.Username, p.Password, true, true);
                 if  (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Profile");
+                    return Redirect("/Writer/Dashboard/Index/");
                 }
                 else
                 {

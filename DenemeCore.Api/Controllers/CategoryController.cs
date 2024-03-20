@@ -44,8 +44,8 @@ namespace DenemeCore.Api.Controllers
         public IActionResult CategoryDelete(int id)
         {
             using var c = new Context();
-            var value=c.Categories.Find(id);
-            if(value ==null)
+            var value = c.Categories.Find(id);
+            if (value == null)
             {
                 return NotFound();
             }
