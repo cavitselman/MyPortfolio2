@@ -1,0 +1,32 @@
+﻿@model Core_Proje.EL.Concrete.Feature
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("Index", "Feature", FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <form class="form-sample">
+                    @Html.HiddenFor(x => x.FeatureID)
+                    <div class="form-group">
+                        <label>Başlık</label>
+                        @Html.TextBoxFor(x => x.Header, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Görev</label>
+                        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                    </div>
+                    <br />
+                    <button class="btn btn-info">Güncelle</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}

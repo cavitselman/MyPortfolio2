@@ -1,0 +1,42 @@
+﻿@using Core_Proje.EL.Concrete
+@model List<WriterMessage>
+
+@{
+    ViewData["Title"] = "SenderMessageList";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yazar-Admin Giden Kutusu</h4>
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Alıcı</th>
+                            <th>Konu</th>
+                            <th>Tarih</th>
+                            <th>Sil</th>
+                            <th>Mesajı Gör</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th>@item.WriterMessageID</th>
+                                <th>@item.ReceiverName</th>
+                                <th>@item.Subject</th>
+                                <th>@(((DateTime)item.Date).ToString("dd-MMM-yyyy"))</th>
+                                <td><a href="/AdminMessage/AdminMessageDelete/@item.WriterMessageID" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AdminMessage/AdminMessageDetails/@item.WriterMessageID" class="btn btn-outline-info">Mesajı Gör</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
