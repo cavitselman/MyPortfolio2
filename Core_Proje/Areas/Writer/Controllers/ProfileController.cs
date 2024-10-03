@@ -40,7 +40,7 @@ namespace Core_Proje.Areas.Writer.Controllers
                 var resource = Directory.GetCurrentDirectory();
                 var extension = Path.GetExtension(p.Picture.FileName);
                 var imagename = Guid.NewGuid() + extension;
-                var savelocation = resource + "/wwwroot/userimage/" + imagename;
+                var savelocation = resource + "/wwwroot/UserImage/" + imagename;
                 var stream = new FileStream(savelocation, FileMode.Create);
                 await p.Picture.CopyToAsync(stream);
                 user.ImageUrl = imagename;

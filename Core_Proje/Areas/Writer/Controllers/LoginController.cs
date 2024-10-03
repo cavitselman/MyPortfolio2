@@ -32,7 +32,7 @@ namespace Core_Proje.Areas.Writer.Controllers
                 var result= await _signInManager.PasswordSignInAsync(p.Username, p.Password, true, true);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Profile");
+                    return Redirect("/Writer/Dashboard/Index");
                 }
                 else
                 {
@@ -45,7 +45,7 @@ namespace Core_Proje.Areas.Writer.Controllers
         public async Task<IActionResult> LogOut()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("Index", "Default", new { area = "" });
         }
     }
 }
