@@ -1,8 +1,8 @@
-# ASP.NET Core 8.0 Dinamik Admin ve Yazar Panelli Portfolyo Sitesi
+<h1 align="center">ASP.NET Core 8.0 Dinamik Admin ve Yazar Panelli Portfolyo Sitesi</h1>
 
 Bu proje, **ASP.NET Core 8.0** sürümü ile hazırlanmış dinamik bir admin ve yazar paneline sahip bir portfolyo projesidir. Proje, dinamik yapıya sahip çok katmanlı mimari (N-Tier Architecture) ve admin ile yazar paneli içermektedir.
 
-## Özellikler
+<h2 align="center">Proje Hakkında</h2>
 
 ### Admin Paneli
 - **CRUD İşlemleri**: Veri tabanı tablolarında tüm dinamik CRUD işlemleri yapılabilmektedir. Yapılan işlemler, ana sayfadaki görünüme eş zamanlı olarak yansır.
@@ -19,7 +19,7 @@ Bu proje, **ASP.NET Core 8.0** sürümü ile hazırlanmış dinamik bir admin ve
 - **E-posta Yönetimi**: Admin ve kullanıcılara e-posta gönderebilme ve adminden gelen mesajları görüntüleyebilme.
 - **Dashboard**: Yazar panelindeki Dashboard üzerinde tüm istatistik bilgilere dinamik olarak erişim ve hava durumu bilgilerini canlı olarak çekme.
 
-## Kullanılan Teknolojiler
+<h2 align="center">Kullanılan Teknolojiler</h2>
 
 ### Web Geliştirme
 - **ASP.NET Core 8.0**
@@ -44,4 +44,4 @@ Bu proje, **ASP.NET Core 8.0** sürümü ile hazırlanmış dinamik bir admin ve
 ### Güvenlik
 - **Authentication & Authorization**
 
-## Proje Görselleri
+<h2 align="center">Proje Görselleri</h2>
