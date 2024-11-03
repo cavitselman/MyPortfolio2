@@ -44,4 +44,35 @@ Bu proje, **ASP.NET Core 8.0** sürümü ile hazırlanmış dinamik bir admin ve
 ### Güvenlik
 - **Authentication & Authorization**
 
-<h2 align="center">Proje Görselleri</h2>
+<h2 align="center"> Proje Görselleri </h3>
+
+![](./Core_Proje/wwwroot/ReadmeImg/1.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/2.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/3.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/4.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/5.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/6.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/7.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/8.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/9.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/10.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/11.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/12.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/13.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/14.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/15.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/16.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/17.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/18.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/19.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/20.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/21.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/22.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/23.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/24.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/25.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/26.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/27.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/28.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/29.jpg)
+![](./Core_Proje/wwwroot/ReadmeImg/30.jpg)
