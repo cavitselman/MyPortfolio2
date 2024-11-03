@@ -1,54 +1,47 @@
-## ASP.NET Core 8.0 Dinamik Admin Ve Yazar Panelli Portfolio Sitesi
-Bu proje, ASP.NET Core 8.0 sürümü ile hazırlanmış dinamik bir admin ve yazar paneline sahip bir portfolyo projesidir. Proje, dinamik yapıya sahip çok katmanlı mimari (N-Tier Architecture) ve admin ile yazar paneli içermektedir.
+<h1 align="center">ASP.NET Core 8.0 Dinamik Admin ve Yazar Panelli Portfolyo Sitesi</h1>
 
-Admin Panelinde;
-Veri tabanı tablolarında tüm dinamik CRUD işlemleri yapılabilmektedir. Yapılan işlemler eş zamanlı olarak ana sayfadaki görünüme yansır.
+Bu proje, **ASP.NET Core 8.0** sürümü ile hazırlanmış dinamik bir admin ve yazar paneline sahip bir portfolyo projesidir. Proje, dinamik yapıya sahip çok katmanlı mimari (N-Tier Architecture) ve admin ile yazar paneli içermektedir.
 
-İstatistik bilgilerini görebilme, gelen ve gönderilen mesajları inceleyebilme, mesaj gönderebilme ve okundu durumunu değiştirebilme özellikleri mevcuttur.
+<h2 align="center">Proje Hakkında</h2>
 
-Admin Rol Ataması Sayesinde sadece rolü Admin olan kullanıcılar admin paneline giriş yapabilir.
+### Admin Paneli
+- **CRUD İşlemleri**: Veri tabanı tablolarında tüm dinamik CRUD işlemleri yapılabilmektedir. Yapılan işlemler, ana sayfadaki görünüme eş zamanlı olarak yansır.
+- **İstatistik Bilgileri**: İstatistik bilgilerini görebilme.
+- **Mesaj Yönetimi**: Gelen ve gönderilen mesajları inceleyebilme, mesaj gönderebilme ve okundu durumunu değiştirebilme.
+- **Rol Ataması**: Sadece rolü "Admin" olan kullanıcılar admin paneline giriş yapabilir.
+- **Bildirimler**: Üst menüden bildirimleri ve gelen mesajları görüntüleyebilme.
+- **Deneyim Sayfası**: Tüm veriler üzerinde AJAX ile CRUD işlemleri yapabilme.
+- **Geçiş İmkanları**: Admin, kendi panelinden yazar paneline ve vitrin sayfasına geçiş yapabilir.
+- **Hata Sayfaları**: Yetkisi olmayan kullanıcılar ve bulunamayan sayfalar için 404 ve 401 hata sayfaları mevcuttur.
 
-Admin üst menüden bildirimleri ve gelen mesajları görebilir.
+### Yazar Paneli
+- **Kullanıcı Bilgileri**: Ad, soyad, şifre, profil resmi (dosya yükleme) gibi bilgileri güncelleyebilme.
+- **E-posta Yönetimi**: Admin ve kullanıcılara e-posta gönderebilme ve adminden gelen mesajları görüntüleyebilme.
+- **Dashboard**: Yazar panelindeki Dashboard üzerinde tüm istatistik bilgilere dinamik olarak erişim ve hava durumu bilgilerini canlı olarak çekme.
 
-Admin, deneyim sayfasında tüm veriler üzerinde ajax ile CRUD işlemlerini yapabilir.
+<h2 align="center">Kullanılan Teknolojiler</h2>
 
-Admin kendi panelinden, yazar paneline ve vitrin sayfasına geçiş yapabilmektedir.
+### Web Geliştirme
+- **ASP.NET Core 8.0**
+- **Entity Framework Core**
+- **ASP.NET Core Identity & Role Management**
 
-Yetkisi olmayan kullanıcılar ve bulunamayan sayfalar için 404 ve 401 hata sayfaları mevcuttur.
+### Mimari
+- **N-Tier Architecture**
+- **Repository Design Pattern**
+- **Code First**
 
-Yazar Panelinde;
-Kullanıcı işlemleri ile ad, soyad, şifre, profil resmi (dosya yükleme) gibi bilgileri güncelleyebilme imkanı sunulmaktadır.
+### API ve İletişim
+- **AJAX**
+- **RESTful API**
+- **Fluent Validation**
+- **Swagger & Postman (API Kısmında)**
 
-Admin ve kullanıcılara e-posta gönderebilme ve adminden gelen mesajları görüntüleyebilme özellikleri bulunmaktadır.
+### Veri Tabanı
+- **MSSQL**
+- **LINQ Sorguları**
 
-Yazar Panelindeki Dashboard üzerinde tüm istatistik bilgilere dinamik olarak erişilmektedir ve hava durumu derecesi api dosyasında belirtilen şehirden canlı olarak çekilmektedir.
+### Güvenlik
+- **Authentication & Authorization**
 
-## Proje kapsamında kullanılan teknolojiler:
-
-- ASP.NET Core 8.0
-
-- Entity Framework Core
-
-- Asp.Net Core Identity & Rolleme
-
-- N Tier Architecture
-
-- Ajax
-
-- Restful API
-
-- Fluent Validation
-
-- Swagger & Postman (API Kısmında)
-
-- MSSQL
-
-- Linq Sorguları
-
-- Repository Design Pattern
-
-- Authentication & Authorization
-
-- Code First
-
-## Proje Görselleri
+<h2 align="center">Proje Görselleri</h2>
