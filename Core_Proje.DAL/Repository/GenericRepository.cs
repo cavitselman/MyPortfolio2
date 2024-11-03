@@ -1,11 +1,6 @@
 ﻿using Core_Proje.DAL.Abstract;
 using Core_Proje.DAL.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core_Proje.DAL.Repository
 {
@@ -17,8 +12,8 @@ namespace Core_Proje.DAL.Repository
             c.Remove(t);
             c.SaveChanges();
         }
-        
-        public List<T> GetbyFilter(Expression<Func<T, bool>> filter) 
+
+        public List<T> GetbyFilter(Expression<Func<T, bool>> filter)
         {
             using var c = new Context();
             return c.Set<T>().Where(filter).ToList();

@@ -4,31 +4,23 @@ namespace Core_Proje.Controllers
 {
     public class AdminController : Controller
     {
-        public PartialViewResult PartialSideBar()
+        public PartialViewResult _PartialHead()
         {
             return PartialView();
         }
-        public PartialViewResult PartialFooter()
+        public PartialViewResult _PartialNavbar()
         {
             return PartialView();
         }
-        public PartialViewResult PartialNavbar()
+        public PartialViewResult _PartialSidebar()
         {
             return PartialView();
         }
-        public PartialViewResult PartialHead()
+        public PartialViewResult _PartialFooter()
         {
             return PartialView();
         }
-        public PartialViewResult PartialScript()
-        {
-            return PartialView();
-        }
-        public PartialViewResult NavigationPartial()
-        {
-            return PartialView();
-        }
-        public PartialViewResult NewSidebar()
+        public PartialViewResult _PartialScript()
         {
             return PartialView();
         }

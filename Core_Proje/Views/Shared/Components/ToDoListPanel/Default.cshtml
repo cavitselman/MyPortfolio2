@@ -13,14 +13,14 @@
                 <ul class="d-flex flex-column-reverse text-white todo-list todo-list-custom">
                     @foreach (var item in Model)
                     {
-                    <li>
-                        <div class="form-check form-check-primary">
-                            <label class="form-check-label">
-                                <input class="checkbox" type="checkbox"> @item.Content
-                            </label>
-                        </div>
-                        <i class="remove mdi mdi-close-box"></i>
-                    </li>
+                        <li class="@(item.Status ? "completed" : "")">
+                            <div class="form-check form-check-primary">
+                                <label class="form-check-label">
+                                    <input class="checkbox" type="checkbox" @(item.Status ? "checked" : "")> @item.Content
+                                </label>
+                            </div>
+                            <i class="remove mdi mdi-close-box"></i>
+                        </li>
                     }
                     @* <li class="completed">
                         <div class="form-check form-check-primary">

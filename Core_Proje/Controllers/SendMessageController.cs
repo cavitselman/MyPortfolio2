@@ -14,7 +14,7 @@ namespace Core_Proje.Controllers
         {
             message.Date = DateTime.Now.ToLocalTime();
             message.Status = true;
-            _messageManager.TAdd(message);        
+            _messageManager.TAdd(message);
             return Redirect("/Default/Index#contact");
         }
     }

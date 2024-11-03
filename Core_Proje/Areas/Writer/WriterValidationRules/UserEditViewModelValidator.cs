@@ -3,9 +3,9 @@ using FluentValidation;
 
 namespace Core_Proje.Areas.Writer.WriterValidationRules
 {
-    public class UserEditViewModelValidator :AbstractValidator<UserEditViewModel>
+    public class UserEditViewModelValidator : AbstractValidator<UserEditViewModel>
     {
-        public UserEditViewModelValidator() 
+        public UserEditViewModelValidator()
         {
             RuleFor(x => x.Name).NotEmpty().WithMessage("Ad boş geçilemez!");
             RuleFor(x => x.Surname).NotEmpty().WithMessage("Soyad boş geçilemez!");

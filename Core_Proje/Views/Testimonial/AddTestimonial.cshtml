@@ -2,14 +2,14 @@
 
 @{
     ViewData["Title"] = "AddTestimonial";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <form asp-action="AddTestimonial">
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <p class="card-description"> Yeni Referans Ekleme Paneli </p>
+                <h4 class="card-title">Yeni Referans Ekleme Paneli</h4>
                 <div class="form-group">
                     <label>Ad Soyad</label>
                     <input type="text" class="form-control" asp-for="@Model.ClientName" />
@@ -32,7 +32,7 @@
                 </div>
                 <br />
                 <button class="btn btn-info">Kaydet</button>
-                <a class="btn btn-dark" href="/Testimonial/Index">İptal</a>
+                <a class="btn btn-dark" href="/Testimonial/Index/">İptal</a>
             </div>
         </div>
     </div>

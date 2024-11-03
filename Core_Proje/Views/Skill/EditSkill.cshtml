@@ -1,18 +1,15 @@
 ﻿@model Core_Proje.EL.Concrete.Skill
 @{
     ViewData["Title"] = "EditSkill";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="card-header border-0">
-    <h3 class="mb-0">Yetenek Düzenleme Sayfası</h3>
-</div>
 @using (Html.BeginForm("EditSkill", "Skill", FormMethod.Post))
 {
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <p class="card-description"> Yetenek Düzenleme Paneli </p>
+                <h4 class="card-title">Yetenek Düzenleme Paneli</h4>
                 <form class="forms-sample">
                     <div class="form-group">
                         <label>ID</label>
@@ -28,7 +25,7 @@
                     </div>
                     <br />
                     <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
-                    <button class="btn btn-dark" href="/Skill/Index">İptal</button>
+                    <button class="btn btn-dark" href="/Skill/Index/">İptal</button>
                 </form>
             </div>
         </div>

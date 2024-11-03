@@ -3,7 +3,7 @@
 
 @{
     ViewData["Title"] = "ReceiverMessageList";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
@@ -11,8 +11,8 @@
         <div class="card-body">
             <h4 class="card-title">Yazar-Admin Gelen Kutusu</h4>
             <div class="table-responsive">
-                <table class="table align-items-center table-flush">
-                    <thead class="thead-light">
+                <table class="table">
+                    <thead>
                         <tr>
                             <th>#</th>
                             <th>Gönderen</th>
@@ -37,7 +37,7 @@
                     </tbody>
                 </table>
                 <br />
-                <a href="AdminMessageSend" class="btn btn-primary">Yeni Mesaj Gönder</a>
+                <a href="/AdminMessage/AdminMessageSend/" class="btn btn-primary">Yeni Mesaj Gönder</a>
             </div>
         </div>
     </div>

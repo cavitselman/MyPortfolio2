@@ -33,15 +33,15 @@ namespace Core_Proje.Controllers
         [HttpGet]
         public IActionResult EditSkill(int id)
         {
-            var values=skillManager.TGetByID(id);
+            var values = skillManager.TGetByID(id);
             return View(values);
         }
         [HttpPost]
         public IActionResult EditSkill(Skill skill)
         {
-            skillManager.TUpdate(skill);           
+            skillManager.TUpdate(skill);
             return RedirectToAction("Index");
         }
-       
+
     }
 }

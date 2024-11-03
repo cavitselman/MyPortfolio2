@@ -35,7 +35,7 @@ namespace Core_Proje.Controllers
         }
         public IActionResult DeleteExperience(int id)
         {
-            var v=experienceManager.TGetByID(id);
+            var v = experienceManager.TGetByID(id);
             experienceManager.TDelete(v);
             return NoContent();
         }

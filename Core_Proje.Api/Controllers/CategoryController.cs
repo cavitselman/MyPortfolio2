@@ -1,6 +1,5 @@
 ﻿using Core_Proje.Api.DAL.ApiContext;
 using Core_Proje.Api.DAL.ApiEntity;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Proje.Api.Controllers
@@ -21,7 +20,7 @@ namespace Core_Proje.Api.Controllers
         {
             using var c = new Context();
             var value = c.Categories.Find(id);
-            if(value ==null)
+            if (value == null)
             {
                 return NotFound();
             }
@@ -61,7 +60,7 @@ namespace Core_Proje.Api.Controllers
         public IActionResult CategoryUpdate(Category p)
         {
             using var c = new Context();
-            var value=c.Find<Category>(p.CategoryID);
+            var value = c.Find<Category>(p.CategoryID);
             if (value == null)
             {
                 return NotFound();

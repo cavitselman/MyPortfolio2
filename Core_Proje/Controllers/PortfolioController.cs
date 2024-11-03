@@ -22,9 +22,9 @@ namespace Core_Proje.Controllers
         }
         [HttpPost]
         public IActionResult AddPortfolio(Portfolio p)
-        {                  
+        {
             PortfolioValidator validations = new PortfolioValidator();
-            ValidationResult results = validations.Validate(p); 
+            ValidationResult results = validations.Validate(p);
             if (results.IsValid)
             {
                 portfolioManager.TAdd(p);
@@ -37,7 +37,7 @@ namespace Core_Proje.Controllers
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
-            return View();                                
+            return View();
         }
         public IActionResult DeletePortfolio(int id)
         {
@@ -65,10 +65,10 @@ namespace Core_Proje.Controllers
             {
                 foreach (var item in results.Errors)
                 {
-                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage); 
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
-            return View();            
+            return View();
         }
     }
 }

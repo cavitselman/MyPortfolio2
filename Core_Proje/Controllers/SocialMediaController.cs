@@ -30,7 +30,7 @@ namespace Core_Proje.Controllers
 
         public IActionResult DeleteSocialMedia(int id)
         {
-            var values=socialMediaManager.TGetByID(id);
+            var values = socialMediaManager.TGetByID(id);
             socialMediaManager.TDelete(values);
             return RedirectToAction("Index");
         }

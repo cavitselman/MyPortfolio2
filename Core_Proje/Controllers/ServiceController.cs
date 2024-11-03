@@ -20,7 +20,7 @@ namespace Core_Proje.Controllers
         }
         [HttpPost]
         public IActionResult AddService(Service s)
-        {            
+        {
             serviceManager.TAdd(s);
             return RedirectToAction("Index");
         }

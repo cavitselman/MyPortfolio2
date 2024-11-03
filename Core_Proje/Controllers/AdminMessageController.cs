@@ -36,7 +36,7 @@ namespace Core_Proje.Controllers
             string p;
             p = "admin@gmail.com";
             var values = writerMessageManager.TGetByID(id);
-            if (values.Receiver== p)
+            if (values.Receiver == p)
             {
                 writerMessageManager.TDelete(values);
                 return RedirectToAction("ReceiverMessageList");
