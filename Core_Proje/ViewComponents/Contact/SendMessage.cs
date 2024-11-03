@@ -1,7 +1,4 @@
-﻿using Core_Proje.BL.Concrete;
-using Core_Proje.DAL.EntityFramework;
-using Core_Proje.EL.Concrete;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Proje.ViewComponents.Contact
 {

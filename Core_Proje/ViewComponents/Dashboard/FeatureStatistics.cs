@@ -1,7 +1,5 @@
-﻿using Core_Proje.BL.Concrete;
-using Core_Proje.DAL.Concrete;
+﻿using Core_Proje.DAL.Concrete;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Core_Proje.ViewComponents.Dashboard
 {

@@ -2,13 +2,13 @@
 
 @{
     ViewData["Title"] = "ContactDetails";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <p class="card-description"> Mesaj Detay Sayfası </p>
+            <h4 class="card-title">Mesaj Detayları</h4>
             <form class="form-sample">
                 @Html.HiddenFor(x => x.MessageID)
                 <br />

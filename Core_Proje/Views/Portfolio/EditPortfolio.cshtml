@@ -1,7 +1,7 @@
 ﻿@model Core_Proje.EL.Concrete.Portfolio
 @{
     ViewData["Title"] = "EditPortfolio";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 @using (Html.BeginForm("EditPortfolio", "Portfolio", FormMethod.Post))
@@ -9,7 +9,7 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <p class="card-description"> Proje Düzenleme Paneli </p>
+                <h4 class="card-title">Proje Düzenleme Paneli</h4>
                 <form class="form-sample">
                     @Html.HiddenFor(x => x.PortfolioID)
                     <br />
@@ -42,7 +42,7 @@
                     @Html.ValidationMessageFor(x => x.Platform, null, new { @class = "text-danger" })
                     <br />
                     <button class="btn btn-info">Güncelle</button>
-                    <a class="btn btn-dark" href="/Portfolio/Index">İptal</a>
+                    <a class="btn btn-dark" href="/Portfolio/Index/">İptal</a>
                 </form>
             </div>
         </div>

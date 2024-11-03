@@ -7,7 +7,7 @@ namespace Core_Proje.Controllers
 {
     public class FeatureController : Controller
     {
-        FeatureManager featureManager = new FeatureManager(new EfFeatureDal());    
+        FeatureManager featureManager = new FeatureManager(new EfFeatureDal());
         [HttpGet]
         public IActionResult Index()
         {
@@ -18,7 +18,7 @@ namespace Core_Proje.Controllers
         public IActionResult Index(Feature feature)
         {
             featureManager.TUpdate(feature);
-            return RedirectToAction("Index","Default");
+            return RedirectToAction("Index", "Default");
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿@model Core_Proje.EL.Concrete.Feature
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 @using (Html.BeginForm("Index", "Feature", FormMethod.Post))
@@ -9,6 +9,7 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
+                <h4 class="card-title">Öne Çıkan Düzenleme</h4>
                 <form class="form-sample">
                     @Html.HiddenFor(x => x.FeatureID)
                     <div class="form-group">

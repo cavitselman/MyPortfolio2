@@ -29,10 +29,10 @@ namespace Core_Proje.Areas.Writer.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result= await _signInManager.PasswordSignInAsync(p.Username, p.Password, true, true);
+                var result = await _signInManager.PasswordSignInAsync(p.Username, p.Password, true, true);
                 if (result.Succeeded)
                 {
-                    return Redirect("/Writer/Dashboard/Index");
+                    return Redirect("/Writer/Dashboard/Index/");
                 }
                 else
                 {

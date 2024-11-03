@@ -1,59 +1,38 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
-
-<!--
-=========================================================
-* Argon Dashboard - v1.2.0
-=========================================================
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-
-
-* Copyright  Creative Tim (http://www.creative-tim.com)
-* Coded by www.creative-tim.com
-
-
-
-=========================================================
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
-<html>
-@await Html.PartialAsync("/Views/Admin/PartialHead.cshtml")
+<html lang="en">
+
+@await Html.PartialAsync("/Views/Admin/_PartialHead.cshtml")
+
 <body>
-    <!-- Sidenav -->
-    <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
-        <div class="scrollbar-inner">
-            <!-- Brand -->
-            <div class="sidenav-header  align-items-center">
-                <a class="navbar-brand" href="javascript:void(0)">
-                    <img src="~/argon-dashboard-master/assets/img/brand/adminicon.png" class="navbar-brand-img" alt="...">
-                </a>
-            </div>           
-            @await Html.PartialAsync("/Views/Admin/PartialSideBar.cshtml")
-        </div>
-    </nav>
-    <!-- Main content -->
-    <div class="main-content" id="panel">
-        <!-- Topnav -->
-        @await Html.PartialAsync("/Views/Admin/PartialNavbar.cshtml")
-        <!-- Header -->
-        <!-- Header -->
-        @await Html.PartialAsync("/Views/Admin/NavigationPartial.cshtml")
-        <!-- Page content -->
-        <div class="container-fluid mt--6">
-            <div class="row">
-                <div class="col">
-                    @RenderBody()                    
-                </div>
+    <div class="container-scroller">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+                <a class="sidebar-brand brand-logo" href="/Dashboard/Index/"><img src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/adminlogo.svg" alt="logo" /></a>
+                <a class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/adminlogo.svg" alt="logo" /></a>
             </div>
-            <!-- Footer -->
-            @await Html.PartialAsync("/Views/Admin/PartialFooter.cshtml")
-        </div>
+            @await Html.PartialAsync("/Views/Admin/_PartialSidebar.cshtml")
+        </nav>
+       
+        <div class="container-fluid page-body-wrapper">
+
+            @await Html.PartialAsync("/Views/Admin/_PartialNavbar.cshtml")
+            
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    @RenderBody()
+                </div>
+                @await RenderSectionAsync("scripts", required: false)
+
+                @await Html.PartialAsync("/Views/Admin/_PartialFooter.cshtml")
+                
+            </div>           
+        </div>        
     </div>
-    <!-- Argon Scripts -->
-    <!-- Core -->
-       @await Html.PartialAsync("/Views/Admin/PartialScript.cshtml")
+
+    @await Html.PartialAsync("/Views/Admin/_PartialScript.cshtml")
+
 </body>
 </html>

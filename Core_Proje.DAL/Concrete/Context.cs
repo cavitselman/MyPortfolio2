@@ -1,11 +1,6 @@
 ﻿using Core_Proje.EL.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core_Proje.DAL.Concrete
 {
@@ -14,7 +9,7 @@ namespace Core_Proje.DAL.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server =.\\SQLEXPRESS; Database = Core_ProjeDB; Trusted_Connection = SSPI; Encrypt = true; TrustServerCertificate = true");
-                //"server=.\\SQLEXPRESS;database=CoreProjeDB;integrated security=true");
+            //"server=.\\SQLEXPRESS;database=CoreProjeDB;integrated security=true");
         }
 
         public DbSet<About> Abouts { get; set; }

@@ -9,7 +9,7 @@ namespace Core_Proje.ViewComponents.SocialMedia
         SocialMediaManager socialMedia = new SocialMediaManager(new EfSocialMediaDal());
         public IViewComponentResult Invoke()
         {
-            var values=socialMedia.TGetList();
+            var values = socialMedia.TGetList();
             return View(values);
         }
     }

@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 @using (Html.BeginForm("Index", "ContactSubplace", FormMethod.Post))
@@ -10,7 +10,7 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <p class="card-description"> Alt İletişim Bilgileri Düzenleme Paneli </p>
+                <h4 class="card-title">Alt İletişim Bilgileri Düzenleme Paneli</h4>
                 <form class="form-sample">
                     <br />
                     @Html.HiddenFor(x=>x.ContactID)
@@ -31,8 +31,7 @@
                         @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
                     </div>
                     <br />
-                    <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
-                    <button class="btn btn-dark">İptal</button>                    
+                    <button type="submit" class="btn btn-info">Güncelle</button>                 
                 </form>
             </div>
         </div>

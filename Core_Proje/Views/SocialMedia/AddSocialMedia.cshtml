@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "AddSocialMedia";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 @using (Html.BeginForm("AddSocialMedia", "SocialMedia", FormMethod.Post))
@@ -10,7 +10,7 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <p class="card-description"> Yeni Hesap Ekleme Paneli </p>
+                <h4 class="card-title">Yeni Hesap Ekleme Paneli</h4>
                 <form class="form-sample">
                     <div class="form-group">
                         <label>Başlık</label>
@@ -33,7 +33,7 @@
                     </div>
                     <br />
                     <button class="btn btn-info">Kaydet</button>
-                    <a class="btn btn-dark" href="/SocialMedia/Index">İptal</a>
+                    <a class="btn btn-dark" href="/SocialMedia/Index/">İptal</a>
                 </form>
             </div>
         </div>

@@ -23,7 +23,7 @@ namespace Core_Proje.Controllers
             return PartialView();
         }
         [HttpGet]
-        public PartialViewResult SendMessage() 
+        public PartialViewResult SendMessage()
         {
             return PartialView();
         }

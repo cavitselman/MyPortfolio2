@@ -2,13 +2,13 @@
 
 @{
     ViewData["Title"] = "EditSocialMedia";
-    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <p class="card-description"> Hesap Düzenleme Paneli </p>
+            <h4 class="card-title">Hesap Düzenleme Paneli</h4>
             <form class="forms-sample" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="exampleInputName1">ID</label>
@@ -27,7 +27,7 @@
                     <input type="text" asp-for="Icon" class="form-control" id="exampleInputName1" placeholder="İkon Url yazınız...">
                 </div>
                 <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
-                <a class="btn btn-light" href="/SocialMedia/Index/">İptal</a>
+                <a class="btn btn-dark" href="/SocialMedia/Index/">İptal</a>
             </form>
         </div>
     </div>
